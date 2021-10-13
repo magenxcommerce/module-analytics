@@ -11,7 +11,6 @@ use Magento\Framework\DB\Select;
 
 /**
  * Responsible for Select object creation, works as a builder. Returns Select as result;
- *
  * Used in SQL assemblers.
  */
 class SelectBuilder
@@ -86,13 +85,11 @@ class SelectBuilder
      * Set joins conditions
      *
      * @param array $joins
-     * @return $this
+     * @return void
      */
     public function setJoins($joins)
     {
         $this->joins = $joins;
-
-        return $this;
     }
 
     /**
@@ -109,13 +106,11 @@ class SelectBuilder
      * Set connection name
      *
      * @param string $connectionName
-     * @return $this
+     * @return void
      */
     public function setConnectionName($connectionName)
     {
         $this->connectionName = $connectionName;
-
-        return $this;
     }
 
     /**
@@ -132,13 +127,11 @@ class SelectBuilder
      * Set columns
      *
      * @param array $columns
-     * @return $this
+     * @return void
      */
     public function setColumns($columns)
     {
         $this->columns = $columns;
-
-        return $this;
     }
 
     /**
@@ -155,13 +148,11 @@ class SelectBuilder
      * Set filters
      *
      * @param array $filters
-     * @return $this
+     * @return void
      */
     public function setFilters($filters)
     {
         $this->filters = $filters;
-
-        return $this;
     }
 
     /**
@@ -178,13 +169,11 @@ class SelectBuilder
      * Set from condition
      *
      * @param array $from
-     * @return $this
+     * @return void
      */
     public function setFrom($from)
     {
         $this->from = $from;
-
-        return $this;
     }
 
     /**
@@ -247,13 +236,11 @@ class SelectBuilder
      * Set group
      *
      * @param array $group
-     * @return $this
+     * @return void
      */
     public function setGroup($group)
     {
         $this->group = $group;
-
-        return $this;
     }
 
     /**
@@ -270,13 +257,11 @@ class SelectBuilder
      * Set parameters
      *
      * @param array $params
-     * @return $this
+     * @return void
      */
     public function setParams($params)
     {
         $this->params = $params;
-
-        return $this;
     }
 
     /**
@@ -293,12 +278,10 @@ class SelectBuilder
      * Set having condition
      *
      * @param array $having
-     * @return $this
+     * @return void
      */
     public function setHaving($having)
     {
         $this->having = $having;
-
-        return $this;
     }
 }
